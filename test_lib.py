@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from mylib.lib import load_dataset, calculate_statistics, create_histogram
 
-# Define the path to the test dataset
+
 file_path = "rdu-weather-history.csv"
 
 
@@ -22,28 +22,38 @@ def test_calculate_statistics():
     stats = calculate_statistics(data)
 
     # Assert statements to check the calculated values against the expected values
-    assert abs(stats.at["mean", "Temperature Minimum"] - 44.225166) < 1e-6, \
-        "Mean of Temperature Minimum is incorrect"
-    assert abs(stats.at["median", "Temperature Minimum"] - 45.000000) < 1e-6, \
-        "Median of Temperature Minimum is incorrect"
-    assert abs(stats.at["std_dev", "Temperature Minimum"] - 14.538763) < 1e-6, \
-        "Standard deviation of Temperature Minimum is incorrect"
+    assert (
+        abs(stats.at["mean", "Temperature Minimum"] - 44.225166) < 1e-6
+    ), "Mean of Temperature Minimum is incorrect"
+    assert (
+        abs(stats.at["median", "Temperature Minimum"] - 45.000000) < 1e-6
+    ), "Median of Temperature Minimum is incorrect"
+    assert (
+        abs(stats.at["std_dev", "Temperature Minimum"] - 14.538763) < 1e-6
+    ), "Standard deviation of Temperature Minimum is incorrect"
 
-    assert abs(stats.at["mean", "Temperature Maximum"] - 66.966887) < 1e-6, \
-        "Mean of Temperature Maximum is incorrect"
-    assert abs(stats.at["median", "Temperature Maximum"] - 70.000000) < 1e-6, \
-        "Median of Temperature Maximum is incorrect"
-    assert abs(stats.at["std_dev", "Temperature Maximum"] - 14.719337) < 1e-6, \
-        "Standard deviation of Temperature Maximum is incorrect"
+    assert (
+        abs(stats.at["mean", "Temperature Maximum"] - 66.966887) < 1e-6
+    ), "Mean of Temperature Maximum is incorrect"
+    assert (
+        abs(stats.at["median", "Temperature Maximum"] - 70.000000) < 1e-6
+    ), "Median of Temperature Maximum is incorrect"
+    assert (
+        abs(stats.at["std_dev", "Temperature Maximum"] - 14.719337) < 1e-6
+    ), "Standard deviation of Temperature Maximum is incorrect"
 
-    assert abs(stats.at["mean", "Precipitation"] - 0.127020) < 1e-6, \
-        "Mean of Precipitation is incorrect"
-    assert abs(stats.at["median", "Precipitation"] - 0.000000) < 1e-6, \
-        "Median of Precipitation is incorrect"
-    assert abs(stats.at["std_dev", "Precipitation"] - 0.327184) < 1e-6, \
-        "Standard deviation of Precipitation is incorrect"
+    assert (
+        abs(stats.at["mean", "Precipitation"] - 0.127020) < 1e-6
+    ), "Mean of Precipitation is incorrect"
+    assert (
+        abs(stats.at["median", "Precipitation"] - 0.000000) < 1e-6
+    ), "Median of Precipitation is incorrect"
+    assert (
+        abs(stats.at["std_dev", "Precipitation"] - 0.327184) < 1e-6
+    ), "Standard deviation of Precipitation is incorrect"
 
     print(stats)
+
 
 def test_create_histogram():
     """Function to test the create_histogram function."""
