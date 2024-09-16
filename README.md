@@ -5,7 +5,14 @@
 This project is for generating descriptive statistics and visualizations from datasets using Python. It integrates CI/CD capabilities through GitHub Actions, which automate the process of generating, testing, and pushing summary reports in Markdown format.
 
 ## CI/CD Badge
-[![CI](https://github.com/nogibjj/yijia_ids706_miniProj2/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/yijia_ids706_miniProj2/actions/workflows/hello.yml)
+[![Install](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/install.yml)
+
+[![Format](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/format.yml)
+
+[![Lint](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/lint.yml)
+
+[![Test](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/yijia_ids706_individual1/actions/workflows/test.yml)
+
 
 ## File Structure
 
