@@ -62,3 +62,6 @@ make install
 
 ## Summary Report Generation
 The CI/CD pipeline automatically generates a Markdown report. The report includes descriptive statistics (mean, median, standard deviation) and visualizations generated from the dataset. The report is then committed and pushed back to the repository.
+
+## Demo
+https://youtu.be/k0wajuBGq7g
